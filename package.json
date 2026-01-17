@@ -1,0 +1,17 @@
+{
+  "name": "js-curso-fundamentos",
+  "version": "1.0.0",
+  "description": "Proyecto de fundamentos de JavaScript",
+  "main": "index.html",
+  "scripts": {
+    "start": "python -m http.server 5000 --bind 0.0.0.0",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "javascript",
+    "fundamentos",
+    "replit"
+  ],
+  "author": "",
+  "license": "ISC"
+}
