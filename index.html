@@ -44,6 +44,14 @@
             <script src="./js/retornoFlecha.js"></script>
         -->
 
-        <script src="./js/valor-referencia.js"></script>
+         <script>
+        // Suprimir errores de Statsig para limpiar la consola
+        const originalError = console.error;
+        console.error = (...args) => {
+            if (args[0] && typeof args[0] === 'string' && args[0].includes('statsig')) return;
+            originalError.apply(console, args);
+        };
+    </script>
+    <script src="./js/valor-referencia.js"></script>
     </body>
 </html>
