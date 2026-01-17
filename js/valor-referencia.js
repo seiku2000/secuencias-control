@@ -1,24 +1,18 @@
 let a = 10;
 let b = a;
-a=30;
-console.log(a,b);
+a = 30;
+console.log(a, b);
 
-let juan = {nombre: "juan"}
-let ana = juan;
-ana.nombre = "ana"
+let juan = { nombre: "juan" };
+let ana = { ...juan };
+ana.nombre = "ana";
 
-console.log(juan,ana);
+console.log(juan, ana);
 
 const cambiaNombre = (persona) => {
     persona.nombre = "tony";
-    return persona
-}
-let peter = {nombre:"peter"};
+    return persona;
+};
+let peter = { nombre: "peter" };
 let tony = cambiaNombre(peter);
-console.log(peter,tony);
-
-
-
-
-
-
+console.log(peter, tony);
