@@ -4,7 +4,7 @@ a = 30;
 console.log(a, b);
 
 let juan = { nombre: "juan" };
-let ana = { ...juan };
+let ana = { ...juan }; //operador spred
 ana.nombre = "ana";
 
 console.log(juan, ana);
