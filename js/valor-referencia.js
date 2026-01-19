@@ -9,7 +9,9 @@ ana.nombre = "ana";
 
 console.log(juan, ana);
 
-const cambiaNombre = (persona) => {
+
+
+const cambiaNombre = ({...persona}) => {
     persona.nombre = "tony";
     return persona;
 };
