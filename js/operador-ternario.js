@@ -20,7 +20,7 @@ horaApertura = ([0,6].includes(dia))? 9 :11;
 
 
 
-
+/*
 if( horaActual >= horaApertura ){
     mensaje = "esta abierto";
 }
@@ -30,5 +30,9 @@ else {
 
 console.log({
     horaApertura,mensaje
-})
-
+})*/
+mensaje = (horaActual >= horaApertura)?
+ "esta abierto" :
+  `esta cerrado vuelva a la hora de: ${horaApertura}`
+console.log({horaApertura,mensaje});
+//console.log({mensaje})
