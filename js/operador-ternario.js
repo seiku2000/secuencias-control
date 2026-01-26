@@ -1,7 +1,7 @@
 
 
 const dia = 1;
-const horaActual =10;
+const horaActual = 10;
 
 let horaApertura;
 let mensaje; //abierto o cerrado
@@ -16,7 +16,7 @@ if([0,6].includes(dia) ){
     console.log("dia entre semana");
     horaApertura = 11;
 }*/
-horaApertura = ([0,6].includes(dia))? 9 :11;
+horaApertura = ([0, 6].includes(dia)) ? 9 : 11;
 
 
 
@@ -31,8 +31,9 @@ else {
 console.log({
     horaApertura,mensaje
 })*/
-mensaje = (horaActual >= horaApertura)?
- "esta abierto" :
-  `esta cerrado vuelva a la hora de: ${horaApertura}`
-console.log({horaApertura,mensaje});
+mensaje = (horaActual >= horaApertura) ?
+    "esta abierto" :
+    `esta cerrado vuelva a la hora de: ${horaApertura}`
+console.log({ horaApertura, mensaje });
+
 //console.log({mensaje})
